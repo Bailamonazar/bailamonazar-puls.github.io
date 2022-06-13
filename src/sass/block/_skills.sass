@@ -1,0 +1,53 @@
+.skills
+    padding-top: 120px
+    h2
+        position: relative
+        text-align: center
+        &::before
+            content: ''
+            position: absolute
+            width: 36px
+            height: 36px
+            background: #FFA501
+            border-radius: 50%
+            left: 50%
+            top: 0
+            z-index: -1
+            transform: translateX(-50%)
+    h3
+        margin-top: 6px
+        text-align: center
+        font-style: normal
+        font-weight: 700
+        font-size: 36px
+    &-divider
+        width: 60px
+        height: 3px
+        background-color: #FFA501
+        margin: 0 auto
+        margin-top: 20px
+
+    &-wrapper
+        justify-content: center
+        margin-top: 60px
+        display: grid
+        grid-template-columns: repeat(4, 270px)
+        grid-column-gap: 13px
+        grid-template-rows: repeat(2, 270px)
+        grid-row-gap: 13px
+        &__item
+            border: 1px solid #000000
+            padding: 30px 30px 25px 30px
+            .title
+                margin-top: 20px
+                font-style: normal
+                font-weight: 700
+                font-size: 14px
+                line-height: 21px
+            p
+                margin-top: 15px
+                font-style: normal
+                font-weight: 500
+                font-size: 12px
+                line-height: 18px
+            

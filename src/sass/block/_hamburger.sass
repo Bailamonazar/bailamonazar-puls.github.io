@@ -1,0 +1,23 @@
+.hamburger  
+    position: absolute
+    display: flex
+    flex-direction: column
+    align-items: flex-end
+    width: 36px
+    height: 36px
+    top: 20px
+    right: 30px
+    z-index: 1
+    cursor: pointer
+    
+    &:hover
+        .hamburger__line
+            transition: 0.3s all
+            background: #fff
+    &__line
+        margin-bottom: 6px
+        background: #151812
+        width: 30px
+        height: 3px
+        &_long
+            width: 100%

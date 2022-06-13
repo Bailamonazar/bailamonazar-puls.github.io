@@ -1,0 +1,40 @@
+.level
+    margin-top: 120px   
+    &-wrapper   
+        justify-content: center
+        display: grid
+        grid-template-columns: repeat(3, 350px)
+        grid-column-gap: 45px
+        grid-template-rows: repeat(2, 70px)
+        grid-row-gap: 30px
+        &__item-title
+            display: grid
+            grid-template-columns: 182px 34px
+            justify-content: space-between
+            .title
+                position: relative
+                padding-left: 13px
+                &::before
+                    content: ''
+                    position: absolute
+                    width: 36px
+                    height: 36px
+                    background: #FFA501
+                    border-radius: 50%
+                    left: 13px
+                    top: -6px
+                    z-index: -1
+                    transform: translateX(-50%)
+                    
+        .scale
+            margin-top: 27px
+            width: 350px
+            height: 14px
+            background: #E8E4DE
+            border-radius: 4px
+            div
+                background: #FFA501
+                border-radius: 4px
+                height: 100%
+
+
