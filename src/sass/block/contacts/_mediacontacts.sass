@@ -1,0 +1,93 @@
+@media ( max-width: 1200px)
+    .container
+        max-width: 960px
+    .contact-wrapper    
+        grid-template-columns: 585px
+        justify-content: center
+    .contact-wrapper__img
+        display: none
+    
+@media ( max-width: 992px)
+    .container
+        max-width: 720px
+
+@media ( max-width: 768px)
+    .container
+        max-width: 540px
+    .contact-wrapper 
+        text-align: center
+        justify-content: center
+    .contact-wrapper .divider
+        margin: 0 auto
+    .contact-wrapper h2::before 
+        left: 247px
+        &__input
+            justify-content: center
+            grid-template-columns: repeat(2,209px)
+        &__policy
+            span
+                font-size: 8px
+                margin-left: 5px
+        &__btn
+            btn
+                font-size: 12px
+    
+@media ( max-width: 576px)
+    .contact
+        overflow: hidden
+    .container
+        max-width: 100%
+        padding: 0 15px
+    .contact-wrapper__social-item a
+        margin-right: 25px
+        &:nth-child(3)
+            margin-right: 0
+            
+        
+    .contact-wrapper h2 
+        widows: 200px
+        text-align: center
+    .contact-wrapper h2::before 
+        display: none
+        left: 247px
+    .contact-wrapper h3
+        font-size: 24px
+        text-align: center
+    .contact-wrapper__contact-client
+        margin: 0 auto
+        font-size: 14px
+        width: 300px
+        text-align: left
+    .contact-wrapper .divider
+        margin: 0 auto
+    .contact-wrapper 
+        text-align: center
+        justify-content: center
+        &__input
+            justify-content: center
+            grid-template-columns: 300px
+            grid-template-rows: 45px 45px 143px 120px
+            &-name
+                grid-column: 1/2
+                grid-row: 1/2
+            &-email
+                grid-column: 1/2
+                grid-row: 2/3
+            &-textarea
+                grid-column: 1/2
+                grid-row: 3/4
+        &__btn
+            justify-content: center
+            grid-column: 1/2
+            grid-row: 4/5
+            grid-template-columns: 220px
+            grid-template-rows: repeat(2, auto)
+            grid-row-gap: 20px
+    
+
+                
+    
+
+            
+    
+           

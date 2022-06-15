@@ -1,0 +1,82 @@
+@media ( min-width: 1200px)
+    .cv-block__img 
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+@media ( max-width: 1200px)
+    .container
+        max-width: 960px
+    .cv-block
+        grid-template-columns: 400px 540px
+        grid-column-gap: 20px
+    .cv-block__developments:nth-child(3)
+        grid-column-gap: 20px
+    .cv-block__img 
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    
+@media ( max-width: 992px)
+    .cv
+            padding: 54px 0 0 0
+    .container
+        max-width: 720px
+    .cv-block__img 
+        img
+            width: 100%
+            height: 100%
+            object-fit: cover
+    .cv-block
+        grid-template-columns: 283px 441px
+        grid-row-gap: 94px
+        h1
+            font-size: 31px
+    .cv-block__developments
+        &:nth-child(3)
+            grid-template-columns: 441px
+            grid-auto-rows: minmax(100px, auto)
+            
+@media ( max-width: 768px)
+    .container
+        max-width: 540px
+    .cv-block
+        grid-template-columns: 160px 357px
+        grid-row-gap: 110px
+        h1
+            font-size: 31px
+    .cv-block__developments
+        &:nth-child(3)
+            grid-template-columns: 357px
+            grid-auto-rows: minmax(100px, auto)
+            grid-row-gap: 10px
+    .cv-block h1 
+        font-size: 27px
+        
+@media ( max-width: 576px)
+    .container
+        width: 100%
+        padding: 0 15px
+    .cv .cv-block
+        grid-template-columns: 310px
+        grid-template-rows: repeat(3, auto) 
+        grid-row-gap: 20px
+    .cv .cv-block__img 
+        grid-column: 1/2
+        grid-row: 1/2
+    .cv .cv-block__text
+        grid-column: 1/2
+        grid-row: 2/3
+    .cv .cv-block__developments
+        margin-top: 20px
+        grid-template-columns: 263px
+        grid-row-gap: 12px
+        grid-column: 1/2
+        grid-row: 3/4
+    .cv 
+        padding: 40px 0px 0px
+    .cv-block h1 
+        font-size: 23px
+    .cv-block__title 
+        margin-top: 46px
